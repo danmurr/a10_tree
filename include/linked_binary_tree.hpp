@@ -28,6 +28,10 @@ public:
     class Position {
     private:
         Node* node; // pointer to the node being wrapped
+
+        // Allow the enclosing LinkedBinaryTree class to access private members
+        friend class LinkedBinaryTree<E>;
+
     public:
         Position(Node* nd = nullptr) : node{nd} {}
 
