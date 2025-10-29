@@ -246,7 +246,6 @@ public:
         }
         return *this;
     }
-
 private:
     // recursive helper for count_left_leaves
     int count_left_leaves_rec(Node* n, bool is_left) const {
